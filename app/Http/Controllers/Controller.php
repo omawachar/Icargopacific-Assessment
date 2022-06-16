@@ -16,9 +16,7 @@ class Controller extends BaseController
 
     public function ajaxCheck(Request $request)
     {
-
         $input =   str_replace(' ', '', $request->input); //to remove blank spaces from input
-
 
         $alphabets = range('a', 'z');
 
@@ -50,4 +48,12 @@ class Controller extends BaseController
             return "Missing Character(s): " . implode("  ", $alphabets);;        //prints the missings characters 
         }
     }
+
+
+
+ 
+
+
+
+
 }
